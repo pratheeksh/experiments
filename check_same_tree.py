@@ -4,6 +4,7 @@ class TreeNode:
         self.left = None
         self.right = None
 
+
 class Solution:
     # @param A : root node of tree
     # @param B : root node of tree
@@ -18,12 +19,12 @@ class Solution:
         B.right = TreeNode(5)
         B.left.left = TreeNode(1)
         print self.isSameTree(A, B)
+
     def inorder(self, node, res):
         if node:
             self.inorder(node.left, res)
             res.append(node.val)
             self.inorder(node.right, res)
-
         return res
 
     def preorder(self, node, res):
