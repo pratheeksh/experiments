@@ -1,0 +1,5 @@
+foo
+foo
+#include bar.txt
+foo
+#include bar.txt
